@@ -18,8 +18,8 @@ export const ContactList = () => {
 
   return (
     <ul>
-      {contacts.length !== 0 ? (
-        contacts.map(({ name, id, number }) => (
+      {filteredContacts.length !== 0 ? (
+        filteredContacts.map(({ name, id, number }) => (
           <li key={id}>
             <p>
               {name}: {number}
